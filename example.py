@@ -71,10 +71,13 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        predictions = lr.predict(train_x)
+        # predictions = lr.predict(train_x)
         #signature = infer_signature(train_x, predictions)
 
-        tracking_url_type_store = urlparse("https://github.com/45-Hrishi/chest-cancer-prediction.git").scheme
+        # setting up the tracking uri for the dagshub
+        tracking_uri = "https://github.com/45-Hrishi/chest-cancer-prediction.git"
+        mlflow.set_tracking_uri(tracking_uri)
+        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
         # Model registry does not work with file store
         if tracking_url_type_store != "file":
