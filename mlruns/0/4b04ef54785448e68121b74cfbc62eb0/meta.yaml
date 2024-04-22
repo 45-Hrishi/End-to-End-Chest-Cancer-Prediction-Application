@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Programming/Projects/Deep%20Learning%20Projects/Chest%20xray%20disease%20prediction/mlruns/0/4b04ef54785448e68121b74cfbc62eb0/artifacts
+end_time: 1713722703485
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4b04ef54785448e68121b74cfbc62eb0
+run_name: gaudy-ape-532
+run_uuid: 4b04ef54785448e68121b74cfbc62eb0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713722697424
+status: 3
+tags: []
+user_id: admin

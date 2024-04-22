@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Programming/Projects/Deep%20Learning%20Projects/Chest%20xray%20disease%20prediction/mlruns/0/e93f9d080fe04e17887038b0637e58a5/artifacts
+end_time: 1713722966922
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e93f9d080fe04e17887038b0637e58a5
+run_name: delightful-hog-342
+run_uuid: e93f9d080fe04e17887038b0637e58a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713722960861
+status: 3
+tags: []
+user_id: admin
