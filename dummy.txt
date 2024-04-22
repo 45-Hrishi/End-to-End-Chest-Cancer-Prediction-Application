@@ -1,0 +1,8 @@
+MLFLOW_TRACKING_URI=https://dagshub.com/45-Hrishi/chest-cancer-prediction.mlflow \
+MLFLOW_TRACKING_USERNAME=45-Hrishi \
+MLFLOW_TRACKING_PASSWORD=8764f4289a3baa605af311e5147cd21f18cac02b \
+python script.py
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/45-Hrishi/chest-cancer-prediction.mlflow
+export MLFLOW_TRACKING_USERNAME=45-Hrishi
+export MLFLOW_TRACKING_PASSWORD=8764f4289a3baa605af311e5147cd21f18cac02b
