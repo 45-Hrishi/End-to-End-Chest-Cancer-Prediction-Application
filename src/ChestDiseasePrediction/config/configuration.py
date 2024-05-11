@@ -1,7 +1,8 @@
 import os 
 from ChestDiseasePrediction.constants import *
 from ChestDiseasePrediction.utils.common import read_yaml,create_directories
-from ChestDiseasePrediction.entity.config_entity import DataIngestionConfig,BaseModelConfig,TrainingConfig
+from ChestDiseasePrediction.entity.config_entity import (DataIngestionConfig,
+BaseModelConfig,TrainingConfig,ModelEvaluationConfig)
 
 class ConfigurationManager:
     def __init__(self,
@@ -58,3 +59,14 @@ class ConfigurationManager:
             params_image_size=params.IMAGE_SIZE
         )
         return training_config
+    
+    def get_evaluation_config(self) -> ModelEvaluationConfig:
+        model_eval_config = ModelEvaluationConfig(
+            path_of_model="artifacts/model_training/model.h5",
+            training_data="artifacts/data_ingestion/Chest-CT-Scan-data",
+            mlflow_uri="https://dagshub.com/45-Hrishi/chest-cancer-prediction.mlflow",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return model_eval_config
