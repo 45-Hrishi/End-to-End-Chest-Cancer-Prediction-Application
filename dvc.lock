@@ -41,7 +41,7 @@ stages:
     outs:
     - path: artifacts/prepare_base_model
       hash: md5
-      md5: 7183ff384aa42b8497bf13f39e1bc65e.dir
+      md5: a553cfdf9fc1231686864e2e3ab61158.dir
       size: 118054560
       nfiles: 2
   model_training:
@@ -54,7 +54,7 @@ stages:
       nfiles: 343
     - path: artifacts/prepare_base_model
       hash: md5
-      md5: 7183ff384aa42b8497bf13f39e1bc65e.dir
+      md5: a553cfdf9fc1231686864e2e3ab61158.dir
       size: 118054560
       nfiles: 2
     - path: config/config.yaml
@@ -77,7 +77,7 @@ stages:
     outs:
     - path: artifacts/model_training/model.h5
       hash: md5
-      md5: 03e46871e04f0b9c7bde3302d6e2ced6
+      md5: 670256f78e791939c23a9009e7523f74
       size: 59337520
   model_evaluation:
     cmd: python src/ChestDiseasePrediction/pipeline/stage_04_model_evaluation.py
@@ -89,7 +89,7 @@ stages:
       nfiles: 343
     - path: artifacts/model_training/model.h5
       hash: md5
-      md5: 03e46871e04f0b9c7bde3302d6e2ced6
+      md5: 670256f78e791939c23a9009e7523f74
       size: 59337520
     - path: config/config.yaml
       hash: md5
@@ -109,5 +109,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: ef9ef186f6f5deec48c22cb232d3fce5
-      size: 70
+      md5: 7bf35c7a390c0871df46b4a5ae1a3d6e
+      size: 73
