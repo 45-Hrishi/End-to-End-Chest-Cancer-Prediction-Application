@@ -2,7 +2,7 @@ import os
 from urllib import request
 import tensorflow as tf
 from pathlib import Path
-from src.ChestDiseasePrediction.entity.config_entity import BaseModelConfig
+from ChestDiseasePrediction.entity.config_entity import BaseModelConfig
 
 class PrepareBaseModel:
     def __init__(self,config=BaseModelConfig):
